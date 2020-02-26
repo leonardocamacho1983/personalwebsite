@@ -1,16 +1,15 @@
+/newsletter/: 
+  filter: "visibility:-public"
+  permalink: "/{slug}/"
+  template: index
 collections: 
-  /:
-    filter: "visibility:public"
+  /: 
     permalink: "/{slug}/"
     template: index
-  /newsletter/:
-    filter: "visibility:-public"
-    permalink: "/{slug}/"
-    template: index
-routes:
+routes: 
   /account/: members/account
   /signin/: members/signin
-  /signup/: public/signup
-taxonomies:
+  /signup/: members/signup
+taxonomies: 
   author: "/author/{slug}/"
   tag: "/tag/{slug}/"
